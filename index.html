@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democracia Abstracta | Mecanismos Ciudadanos</title>
+    <!-- Bootstrap 5.3 Dark Mode -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Orbitron + Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500&display=swap"
+        rel="stylesheet">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Formas abstractas de fondo -->
+    <div class="abstract-shape shape-1"></div>
+    <div class="abstract-shape shape-2"></div>
+
+    <!-- Navbar Futurista -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="neon-text">DEMOCRACIA</span>
+                <span class="text-secondary px-2">//</span>
+                <span class="text-primary">UPTC MANUEL DAZA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list text-primary"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#participacion">Participación</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#proteccion">Protección</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#casos">Casos Reales</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Rediseñada -->
+    <header class="container-fluid px-0">
+        <div class="hero-container position-relative overflow-hidden">
+            <!-- Fondo abstracto -->
+            <div class="hero-bg" style="
+            background: linear-gradient(135deg, rgba(26,26,46,0.9) 0%, rgba(10,10,10,1) 100%);
+            min-height: 80vh;
+        "></div>
+
+            <!-- Contenido principal -->
+            <div class="container position-relative z-index-1 py-5" style="min-height: 80vh;">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-5 pe-lg-5">
+                        <h1 class="display-3 fw-bold neon-text mb-4">
+                            <span class="d-block">CIUDADANÍA</span>
+                            <span class="text-primary">ACTIVA</span>
+                        </h1>
+
+                        <div
+                            class="hero-text-box bg-dark bg-opacity-50 p-4 rounded-4 mb-4 border-start border-primary border-4">
+                            <p class="lead mb-0">
+                                Los mecanismos de participación y protección son herramientas fundamentales para
+                                construir
+                                una sociedad más justa e incluyente, donde los ciudadanos son protagonistas del cambio.
+                            </p>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="#participacion" class="btn btn-primary px-4 py-3 d-flex align-items-center">
+                                <i class="bi bi-megaphone fs-4 me-2"></i>
+                                <span>Mecanismos<br>de Participación</span>
+                            </a>
+                            <a href="#proteccion" class="btn btn-outline-light px-4 py-3 d-flex align-items-center">
+                                <i class="bi bi-shield-check fs-4 me-2"></i>
+                                <span>Mecanismos<br>de Protección</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 mt-5 mt-lg-0">
+                        <div class="hero-image-container position-relative">
+                            <div
+                                class="ratio ratio-16x9 rounded-4 overflow-hidden border border-primary border-opacity-25">
+                                <img src="./img/hero.png" class="img-fluid object-cover" alt="Democracia participativa"
+                                    style="filter: grayscale(20%) contrast(120%)">
+                            </div>
+                            <div class="position-absolute top-0 start-0 w-100 h-100" style="
+                            background: radial-gradient(circle at center, transparent 60%, rgba(111, 66, 193, 0.1));
+                            pointer-events: none;
+                        "></div>
+
+                            <!-- Citas flotantes -->
+                            <div class="hero-quote position-absolute start-0 bottom-0 bg-dark bg-opacity-75 p-3 m-3 rounded-3 border-start border-primary border-3"
+                                style="max-width: 300px;">
+                                <p class="small mb-0">
+                                    <i class="bi bi-quote text-primary"></i>
+                                    La democracia no es el silencio, es la claridad con que se exponen los problemas
+                                    <i class="bi bi-quote text-primary"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN MECANISMOS DE PARTICIPACIÓN -->
+    <section id="participacion" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold neon-text">MECANISMOS DE <span class="text-primary">PARTICIPACIÓN CIUDADANA</span></h2>
+            <p class="text-muted">Herramientas para incidir directamente en las decisiones políticas</p>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row bg-dark rounded-4 overflow-hidden">
+            <!-- Columna Imagen (Lateral) -->
+            <div class="col-lg-4 p-0">
+                <img src="./img/voto.png" alt="Proceso de votación" class="img-fluid h-100 object-fit-cover">
+            </div>
+
+            <!-- Columna Contenido -->
+            <div class="col-lg-8 p-4 p-lg-5 d-flex align-itemes-center">
+                <div class="row g-4 align-items-center">
+                    <!-- Icono + Título -->
+                    <div class="col-lg-1 text-center text-lg-start">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 p-3 rounded-3 d-inline-block">
+                            <i class="bi bi-check2-circle text-primary fs-2"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-11">
+                        <h3 class="mb-3">El Voto Popular</h3>
+                    </div>
+
+                    <!-- Contenido -->
+                    <div class="col-lg-6">
+                        <div class="pe-lg-4">
+                            <h4 class="text-primary mb-3"><i class="bi bi-journal-text me-2"></i>Descripción</h4>
+                            <p>
+                                El voto popular es el mecanismo fundamental de participación ciudadana en Colombia. A
+                                través
+                                de él, los ciudadanos eligen a sus representantes en cargos de elección popular.
+                            </p>
+                            <p>
+                                Derecho consagrado en el artículo 103 de la Constitución Política para mayores de 18
+                                años.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Procedimiento -->
+                    <div class="col-lg-6">
+                        <div class="ps-lg-4 border-start border-secondary">
+                            <h4 class="text-primary mb-3"><i class="bi bi-list-ol me-2"></i>Procedimiento</h4>
+                            <ol class="steps-list">
+                                <li><strong>Inscripción:</strong> Registra tu cédula en puestos autorizados.</li>
+                                <li><strong>Verificación:</strong> Consulta tu puesto en la Registraduría.</li>
+                                <li><strong>Votación:</strong> Ejerce tu derecho con cédula (8am-4pm).</li>
+                                <li><strong>Emisión:</strong> Voto secreto en urna.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVISOR SECCIONAL -->
+    <div class="divider-advanced container">
+        <div class="line"></div>
+        <div class="hexagon">
+            <i class="bi bi-shield-lock"></i>
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <!-- SECCIÓN MECANISMOS DE PROTECCIÓN -->
+    <section id="proteccion" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold neon-text">MECANISMOS DE <span class="text-danger">PROTECCIÓN CIUDADANA</span></h2>
+            <p class="text-muted">Instrumentos jurídicos para defender derechos individuales y colectivos</p>
+        </div>
+
+        <div
+            class="d-flex flex-column flex-lg-row bg-dark rounded-4 overflow-hidden mb-5 border border-danger border-opacity-25">
+            <!-- Columna Imagen (Lateral) -->
+            <div class="col-lg-5 p-0 position-relative">
+                <img src="./img/popular.png" alt="Proceso de votación" class="img-fluid h-100 object-fit-cover">
+            </div>
+
+            <!-- Columna Contenido -->
+            <div class="col-lg-7 p-4 p-lg-5 d-flex align-itemes-center">
+                <div class="row g-4">
+                    <!-- Icono + Título -->
+                    <div class="col-12 d-flex align-items-center">
+                        <div class="icon-wrapper bg-danger bg-opacity-10 p-3 rounded-3 me-3 flex-shrink-0">
+                            <i class="bi bi-shield-check text-danger fs-2"></i>
+                        </div>
+                        <h3 class="mb-0">Acción Popular</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="col-12">
+                        <div class="pe-lg-3">
+                            <h4 class="text-danger mb-3"><i class="bi bi-journal-text me-2"></i>Descripción</h4>
+                            <p>
+                                La Acción Popular es un mecanismo constitucional que permite a cualquier ciudadano,
+                                organización o entidad pública solicitar ante un juez la protección de los derechos e
+                                intereses colectivos cuando estos se vean amenazados o vulnerados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Procedimiento dividido en 2 columnas -->
+                    <div class="col-12">
+                        <h4 class="text-danger mb-3"><i class="bi bi-list-ol me-2"></i>Procedimiento</h4>
+                        <ol class="steps-list grid-steps">
+                            <li><strong>Identificación:</strong> Determina el derecho colectivo afectado.</li>
+                            <li><strong>Recolección:</strong> Reúne pruebas documentales.</li>
+                            <li><strong>Redacción:</strong> Elabora la demanda.</li>
+                            <li><strong>Presentación:</strong> Radica ante el juez.</li>
+                            <li><strong>Admisión:</strong> Juez evalúa y corrige.</li>
+                            <li><strong>Notificación:</strong> Informa a las partes.</li>
+                            <li><strong>Audiencia:</strong> Espacio para acuerdos.</li>
+                            <li><strong>Fallo:</strong> Sentencia con medidas.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Casos Reales -->
+    <section id="casos" class="container py-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold neon-text">CASOS <span class="text-primary">REALES</span></h2>
+            <p class="text-muted">Ejemplos prácticos de ciudadanos usando estos mecanismos</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="holographic-card h-100 p-0 rounded-4 overflow-hidden">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-6">
+                            <div class="p-4">
+                                <span class="badge bg-primary mb-2">Voto Popular</span>
+                                <h3>Consulta Reforma Laboral 2025</h3>
+                                <p>El presidente Petro propuso consulta popular sobre reforma laboral tras rechazo del
+                                    Senado, con 12 preguntas sobre formalización laboral e inclusión.</p>
+
+                                <div class="d-flex align-items-center mt-3">
+                                    <a href="https://elpais.com/america-colombia/2025-05-05/la-consulta-popular-de-petro-llega-con-favorabilidad-al-senado.html?utm_source=chatgpt.com"
+                                        class="btn btn-sm btn-outline-secondary">
+                                        <i class="bi bi-newspaper"></i> Detalles
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="position-relative h-100">
+                                <img src="./img/caso1.png" class="img-fluid h-100 w-100" alt="Consulta popular"
+                                    style="object-fit: cover; filter: grayscale(30%) contrast(120%)">
+                                <div class="position-absolute bottom-0 start-0 p-2 bg-dark bg-opacity-75 w-100">
+                                    <p class="text-white mb-0 small">📊 57% apoyaba la consulta • 94% respaldo a
+                                        formalización</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="holographic-card h-100 p-0 rounded-4 overflow-hidden">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-6">
+                            <div class="p-4">
+                                <span class="badge bg-success mb-2">Acción Popular</span>
+                                <h3>Protección Bahía de Cartagena</h3>
+                                <p>Acción interpuesta por la Procuraduría contra entidades estatales para proteger los
+                                    derechos colectivos ambientales de la bahía.</p>
+
+                                <div class="d-flex align-items-center mt-3">
+                                    <a href="https://www.minambiente.gov.co/asuntos-marinos-costeros-y-recursos-acuaticos/sentencia-accion-popular-bahia-de-cartagena/?utm_source=chatgpt.com"
+                                        class="btn btn-sm btn-outline-secondary">
+                                        <i class="bi bi-newspaper"></i> Detalles
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="position-relative h-100">
+                                <img src="./img/caso2.png" class="img-fluid h-100 w-100" alt="Bahía de Cartagena"
+                                    style="object-fit: cover; filter: grayscale(30%) contrast(120%)">
+                                <div class="position-absolute bottom-0 start-0 p-2 bg-dark bg-opacity-75 w-100">
+                                    <p class="text-white mb-0 small">🛡️ Protección ambiental mediante Ley 472 de 1998
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVISOR FINAL -->
+    <div class="divider-advanced container my-5">
+        <div class="line"></div>
+        <div class="hexagon">
+            <i class="bi bi-arrow-repeat"></i>
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <!-- SECCIÓN DESAFÍOS Y RECOMENDACIONES -->
+    <section id="desafios" class="container py-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold neon-text">DESAFÍOS Y <span class="text-warning">RECOMENDACIONES</span></h2>
+            <p class="text-muted">Superando barreras para una participación efectiva</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Tarjeta de Desafíos -->
+            <div class="col-lg-6">
+                <div class="holographic-card h-100 p-4 rounded-4 border border-danger border-opacity-25">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-wrapper bg-danger bg-opacity-10 p-3 rounded-3 me-3">
+                            <i class="bi bi-exclamation-triangle text-danger fs-2"></i>
+                        </div>
+                        <h3 class="mb-0">Principales Desafíos</h3>
+                    </div>
+
+                    <ul class="steps-list">
+                        <li><strong>Desconocimiento ciudadano:</strong> Muchos no conocen estos mecanismos o cómo
+                            usarlos.</li>
+                        <li><strong>Burocracia:</strong> Procesos complejos y lentos desincentivan la participación.
+                        </li>
+                        <li><strong>Acceso limitado:</strong> Barreras para poblaciones rurales y vulnerables.</li>
+                        <li><strong>Falta de seguimiento:</strong> Implementación deficiente de fallos y acuerdos.</li>
+                        <li><strong>Polarización:</strong> Uso político partidista de los mecanismos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Recomendaciones -->
+            <div class="col-lg-6">
+                <div class="holographic-card h-100 p-4 rounded-4 border border-success border-opacity-25">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-wrapper bg-success bg-opacity-10 p-3 rounded-3 me-3">
+                            <i class="bi bi-lightbulb text-success fs-2"></i>
+                        </div>
+                        <h3 class="mb-0">Recomendaciones Clave</h3>
+                    </div>
+
+                    <ul class="steps-list">
+                        <li><strong>Educación cívica:</strong> Campañas masivas sobre mecanismos de participación.</li>
+                        <li><strong>Simplificación:</strong> Plataformas digitales accesibles y guías paso a paso.</li>
+                        <li><strong>Acompañamiento:</strong> Asesoría jurídica gratuita para comunidades.</li>
+                        <li><strong>Transparencia:</strong> Sistemas de seguimiento público a casos.</li>
+                        <li><strong>Articulación:</strong> Alianzas entre sociedad civil, academia y Estado.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conclusión -->
+            <div class="col-12 mt-5">
+                <div class="bg-dark bg-opacity-50 p-4 p-lg-5 rounded-4 border-start border-warning border-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-wrapper bg-warning bg-opacity-10 p-3 rounded-3 me-3">
+                            <i class="bi bi-stars text-warning fs-2"></i>
+                        </div>
+                        <h3 class="mb-0 text-warning">Conclusión</h3>
+                    </div>
+
+                    <p class="lead">
+                        Los mecanismos de participación y protección son herramientas poderosas pero subutilizadas. Su
+                        verdadero potencial se alcanza cuando:
+                    </p>
+
+                    <ol class="steps-list">
+                        <li>Los ciudadanos los conocen y comprenden</li>
+                        <li>Existe voluntad política para implementar sus resultados</li>
+                        <li>Se combinan con organización comunitaria y veeduría constante</li>
+                    </ol>
+
+                    <div class="alert alert-dark mt-4 border-warning">
+                        <i class="bi bi-quote fs-1 text-warning float-start me-3"></i>
+                        <p class="mb-0">
+                            La democracia se fortalece no con la perfección de sus instituciones, sino con la constancia
+                            de sus ciudadanos en usarlas, mejorarlas y defenderlas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Efecto de máquina de escribir para el hero -->
+    <script>
+        // Efecto de máquina de escribir opcional
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.neon-text');
+            elements.forEach(el => {
+                el.style.animation = 'flicker 3s infinite alternate';
+            });
+        });
+    </script>
+</body>
+
+</html>
