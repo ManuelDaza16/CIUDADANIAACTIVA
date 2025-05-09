@@ -1,0 +1,267 @@
+:root {
+    --bs-body-bg: #0a0a0a;
+    --bs-body-color: #e0e0e0;
+    --bs-primary: #6f42c1;
+    --bs-secondary: #ff6b6b;
+    --bs-danger: #dc3545;
+    --bs-warning: #ffc107;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at 10% 20%, #1a1a2e 0%, #000 90%);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Efecto Neon para títulos */
+.neon-text {
+    text-shadow: 0 0 8px rgba(111, 66, 193, 0.8);
+}
+
+/* Formas abstractas flotantes */
+.abstract-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: var(--bs-primary);
+    top: 10%;
+    left: 5%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--bs-secondary);
+    bottom: 15%;
+    right: 10%;
+    animation: float 6s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, 30px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Tarjetas con efecto holográfico */
+.holographic-card {
+    background: rgba(20, 20, 40, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(111, 66, 193, 0.3);
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.holographic-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(111, 66, 193, 0.3);
+    border-color: rgba(111, 66, 193, 0.6);
+}
+
+/* Navbar futurista */
+.navbar {
+    border-bottom: 1px solid rgba(111, 66, 193, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--bs-primary);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Estilos para mecanismos */
+.mechanism-card {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+}
+
+.mechanism-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(111, 66, 193, 0.3);
+}
+
+/* Lista de pasos */
+.steps-list {
+    counter-reset: step;
+    padding-left: 1.5rem;
+}
+
+.steps-list li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 0.8rem;
+    padding-left: 1.8rem;
+}
+
+.steps-list li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--bs-primary);
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Alertas de casos */
+.alert-case {
+    backdrop-filter: blur(5px);
+    border-left: 4px solid;
+    border-radius: 0;
+}
+
+/* Divisor seccional avanzado */
+.divider-advanced {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.divider-advanced .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--bs-primary), transparent);
+}
+
+.divider-advanced .hexagon {
+    width: 50px;
+    height: 50px;
+    background: var(--bs-dark);
+    border: 1px solid var(--bs-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    margin: 0 15px;
+}
+
+.divider-advanced .hexagon i {
+    transform: rotate(-45deg);
+    color: var(--bs-primary);
+}
+
+/* Icon wrappers */
+.icon-wrapper {
+    transition: all 0.3s;
+}
+
+.icon-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.hero-container {
+position: relative;
+}
+
+.hero-bg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
+}
+
+.z-index-1 {
+position: relative;
+z-index: 1;
+}
+
+.hero-text-box {
+backdrop-filter: blur(5px);
+}
+
+.hero-image-container {
+box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.object-cover {
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.animate-bounce {
+animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+40% {transform: translateY(-20px);}
+60% {transform: translateY(-10px);}
+}
+
+.hero-quote {
+backdrop-filter: blur(5px);
+}
+
+.grid-steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1.5rem;
+    list-style: none;
+    counter-reset: step-counter;
+}
+@media (max-width: 767px) {
+    .grid-steps { grid-template-columns: 1fr; }
+}
+.grid-steps li {
+    counter-increment: step-counter;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.grid-steps li::before {
+    content: counter(step-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
